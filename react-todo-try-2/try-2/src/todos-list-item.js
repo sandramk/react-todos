@@ -14,7 +14,7 @@ export default class TodosListItem extends React.Component {
       return (
         <td>
           <button>Save</button>
-          <button>Cancel</button>
+          <button onClick={this.onEditClick.bind(this)}>Cancel</button>
         </td>
       );
     }
