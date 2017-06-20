@@ -12,7 +12,8 @@ export default class CreateTodo extends React.Component {
     );
   }
 
-  handleCreate() {
-    console.log(this.refs.createInput);
+  handleCreate(event) {
+    event.preventDefault();
+    console.log(this.refs.createInput.value);
   }
 }
