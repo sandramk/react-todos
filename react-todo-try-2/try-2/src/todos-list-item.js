@@ -35,10 +35,10 @@ export default class TodosListItem extends React.Component {
   }
 
     onEditClick() {
-      this.setState({ isEditing: true});
+      this.setState({ isEditing: true });
     }
 
     onCancelClick() {
-      this.setState({ isEditing:false});
+      this.setState({ isEditing:false });
     }
 };

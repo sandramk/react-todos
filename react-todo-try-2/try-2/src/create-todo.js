@@ -5,10 +5,14 @@ export default class CreateTodo extends React.Component {
     console.log(this.props.todos);
 
     return  (
-      <form>
-        <input type="text" placeholder="What do I need to do?" />
+      <form onSubmit={this.handleCreate.bind(this)}>
+        <input type="text" placeholder="What do I need to do?" ref="createInput"/>
         <button>Create</button>
       </form>
     );
+  }
+
+  handleCreate() {
+    console.log(this.refs.createInput);
   }
 }
