@@ -11,6 +11,7 @@ export default class TodosListItem extends React.Component {
 
   renderTaskSection() {
     return (
+      <td>{this.props.task}</td>
     );
   }
 
