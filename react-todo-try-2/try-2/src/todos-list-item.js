@@ -15,12 +15,12 @@ export default class TodosListItem extends React.Component {
     const taskStyle = {
       color: isCompleted ? 'green' : 'red',
       cursor: 'pointer'
-    }
+    };
 
-    if (this.state.isEditinng) {
+    if (this.state.isEditing) {
       return (
         <td>
-          <form onSubmit={this.onSaveClick.bind(this)} >
+          <form onSubmit={this.onSaveClick.bind(this)}>
             <input type="text" defaultValue={task} ref="editInput"/>
           </form>
         </td>
