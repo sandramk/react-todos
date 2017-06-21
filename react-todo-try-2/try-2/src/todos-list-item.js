@@ -24,7 +24,7 @@ export default class TodosListItem extends React.Component {
             <input type="text" defaultValue={task} ref="editInput"/>
           </form>
         </td>
-      )
+      );
     }
 
     return (
