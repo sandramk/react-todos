@@ -37,6 +37,7 @@ export default class CreateTodo extends React.Component {
 
     if (validateInput) {
       this.setState({ error: validateInput });
+      return;
     }
 
     this.setState({ error: null});
