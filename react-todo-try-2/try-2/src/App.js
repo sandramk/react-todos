@@ -33,6 +33,7 @@ export default class App extends React.Component {
           createTask={this.createTask.bind(this)}
           toggleTask={this.toggleTask.bind(this)}
           saveTask={this.saveTask.bind(this)}
+          deleteTask={this.deleteTask.bind(this)}
           />
       </div>
     );
