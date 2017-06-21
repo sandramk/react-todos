@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React from 'react';
 
 export default class CreateTodo extends React.Component {
@@ -46,7 +47,7 @@ export default class CreateTodo extends React.Component {
   validateInput(task) {
     if(!task) {
       return 'Please enter a task.';
-    } else if (_.find(this.props.todos, todo => task.todo === task)) {
+    } else if ( _.find(this.props.todos, todo => task.todo === task)) {
       return 'Task already exists.';
     } else {
       return null;
