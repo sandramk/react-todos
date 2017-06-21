@@ -30,8 +30,8 @@ export default class App extends React.Component {
         <CreateTodo createTask={this.createTask.bind(this)}/>
         <TodosList
           todos={this.state.todos}
-          createTask={this.createTask.bind(this)}/>
-          toggleTask={this.toggleTask.bind(this)}
+          createTask={this.createTask.bind(this)}
+          toggleTask={this.toggleTask.bind(this)}/>
       </div>
     );
   }
