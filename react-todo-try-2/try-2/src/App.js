@@ -40,7 +40,7 @@ export default class App extends React.Component {
   }
 
   toggleTask(task) {
-    const foundTodo = _.find(this.state.todos, todo => todo.task == task);
+    const foundTodo = _.find(this.state.todos, todo => todo.task === task);
     foundTodo.isCompleted = !foundTodo.isCompleted;
     this.setState({ todos: this.state.todos });
   }
