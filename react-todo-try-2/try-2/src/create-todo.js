@@ -51,6 +51,5 @@ export default class CreateTodo extends React.Component {
     } else {
       return null;
     }
-    }
   }
 }
